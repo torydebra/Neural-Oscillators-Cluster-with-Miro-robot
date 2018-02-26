@@ -10,6 +10,7 @@ When close tactile sensors are excited with	similar	stimuli, the corresponding n
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/26459008/36688969-5b54e87a-1b2e-11e8-932a-54776562864f.jpg">
 </p>
+
 - Modify the matlab code according to our case 
   - Simplified "main" SlotineExperiment
   - Modified readMap to read MiroMap.txt
