@@ -7,6 +7,9 @@ When close tactile sensors are excited with	similar	stimuli, the corresponding n
 ### Accomplishments
 - Create a simple ROS subscriber that received data from Miro sensors and save things on a file
 - Mapped Miro sensors "flatting" his body. This is needed to understand which sensors must be syncronized (if they are active). The map is created mesauring distance of Miro sensor and writing them in the MiroMap.txt file
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/26459008/36688969-5b54e87a-1b2e-11e8-932a-54776562864f.jpg">
+</p>
 - Modify the matlab code according to our case 
   - Simplified "main" SlotineExperiment
   - Modified readMap to read MiroMap.txt
