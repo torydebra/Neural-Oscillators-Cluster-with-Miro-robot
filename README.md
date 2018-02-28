@@ -43,12 +43,21 @@ We try taking 5,9 values (and make the average) of each curve for each step (a s
 ### Modules/Files in the system
 - listenerMiro.cpp (Ros subscriber to store values from Miro sensor)
 - Matlab functions (SlotineExperiment.m is the main)
+- Inside doc folder there are matlab publish of each function and doxygen for listenerMiRo.cpp
 
  
 ### How to run the application
-There are already touch pattern taken with listenerMiro.cpp inside matlab/activation_sequence. Otherwise, one can use listenerMiro node to make new ones.
-With Matlab, run SlotineExperiment.m (this is the main) inside each function there is the possibility to show more figures uncommenting part of the code
+There are already touch pattern taken with listenerMiro.cpp inside matlab/activation_sequence, and also the txt file with the coordinate of the MiRo's sensors
+With Matlab, run SlotineExperiment.m (this is the main). If you want you can change here something:
+- To change activation sequence, specify it as argument of ReadInput function
+- As argument of ActivateOscillators you can change ti and tf (the smaller their range is, the more the errors could increase because curves have less time to assestate in each step). You can change step if you want to take only some rows of the activation sequence.
+- Inside each function there is the possibility to show more figures uncommenting final part of the code
 
+If you want to acquire new patter with MiRo, you need to compile and execute listenerMiro node:
+- Be sure to have ROS installed in your system and to have setuped correctly your pc to communicate with MiRo (find instruction on [MiRo website](https://consequential.bitbucket.io/Developer_Preparation.html)
+- inside catkin\_miro folder use catkin\_make then source ./devel/setup.bash
+- run roscore
+- launch node with "rosrun sensor\_acquisition listener\_Miro \<name you want\>
 
 ### Credits 
 Davide Torielli & Fabio Fusaro For the "Software Architectures for Robotics" course 2017/2018
