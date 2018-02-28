@@ -44,7 +44,8 @@ We try taking 5,9 values (and make the average) of each curve for each step (a s
 ### Modules/Files in the system
 - listenerMiro.cpp node of the sensor\_acquisition package inside src\/sensor_acquisition\/src (Ros subscriber to store values from MiRo sensors)
 - Matlab functions inside matlab folder (SlotineExperiment.m is the main)
-- Inside doc folder there are matlab publish outputs of each function and doxygen for listenerMiro.cpp
+- Inside doc folder there are matlab publish outputs of each function and doxygen (open index.html) for listenerMiro.cpp
+
 
  
 ### How to run the application
