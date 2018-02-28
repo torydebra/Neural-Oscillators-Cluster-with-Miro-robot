@@ -8,7 +8,7 @@ When close tactile sensors are excited with	similar	stimuli, the corresponding n
 - Create a simple ROS subscriber that received data from Miro sensors and save things on a file
 - Mapped Miro sensors "flatting" his body. This is needed to understand which sensors must be syncronized (if they are active). The map is created mesauring distance of Miro sensor and writing them in the MiroMap.txt file
 <p align="center"> 
-<img src="https://user-images.githubusercontent.com/26459008/36688969-5b54e87a-1b2e-11e8-932a-54776562864f.jpg">
+<img src="https://user-images.githubusercontent.com/26459008/36801857-7e9bd47a-1cb3-11e8-9eb3-f716f2d8bddf.jpg">
 </p>
 
 - Modify the matlab code according to our case 
@@ -16,6 +16,13 @@ When close tactile sensors are excited with	similar	stimuli, the corresponding n
   - Modified readMap to read MiroMap.txt
   - Modified ReadInput and ActiveOscillators according to Miro sensors.
 - Create findSyncronizations.m function to understand which sensors are coupled between them, starting from the values of the curves
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/26459008/36801866-85a66ad2-1cb3-11e8-9d2b-1360bafdfa0b.jpg">
+</p>
+In this figure are represented the neural oscillators responses (only the activated ones at least once in the pattern).
+This is a zoom in steps 97-98-99 (x label is multiplied by tf that is 100). We see 2 clusters: the curve in blue is in real two curves overlying each other.
+
+
 
 
 ### Limitations of the system:
