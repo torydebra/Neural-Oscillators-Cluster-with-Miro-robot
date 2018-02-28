@@ -56,9 +56,11 @@ With Matlab, run SlotineExperiment.m (this is the main). If you want you can cha
 
 If you want to acquire new patter with MiRo, you need to compile and execute listenerMiro node:
 - Be sure to have ROS installed in your system and to have setuped correctly your pc to communicate with MiRo (find instruction on [MiRo website](https://consequential.bitbucket.io/Developer_Preparation.html)
-- inside catkin\_miro folder use catkin\_make 
+- inside catkin\_miro folder use catkin\_make
 - run roscore then, in another terminal, write command source ./devel/setup.bash
 - launch node with "rosrun sensor\_acquisition listener\_Miro \<name of activation sequence you want\>
+
+*Note* We found that on some system catkin\_make fails because it can't find header file of the compiled platform\_sensors\_msg.msg. If this happen, copy the file platform\_sensors\_msg.h (located in HeaderCatError folder) to devel/include/sensor\_acquisition/ and run catkin\_make again
 
 ### Credits 
 Davide Torielli & Fabio Fusaro For the "Software Architectures for Robotics" course 2017/2018
