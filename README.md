@@ -64,7 +64,9 @@ If you want to acquire new patter with MiRo, you need to compile and execute lis
 __Note:__  We found that on some system catkin\_make fails because it can't find header file of the compiled platform\_sensors\_msg.msg. If this happen, copy the file platform\_sensors\_msg.h (located in HeaderCatError folder) to devel/include/sensor\_acquisition/ and run catkin\_make again
 
 ### Credits 
-Davide Torielli & Fabio Fusaro For the "Software Architectures for Robotics" course 2017/2018
+[Davide Torielli](https://github.com/torydebra)
+[Fabio Fusaro](https://github.com/fafux)
+For the "Software Architectures for Robotics" course 2017/2018
 
 Starting from code of Fulvio Mastrogiovanni (aims at validating the experiment in the Wang's and Slotine's paper; Last modified on July 19, 2010)
 And modified by Barbara Bruno & Jorhabib E. Gomez (for the "Software Architectures for Robotics" course 2010/2011)
