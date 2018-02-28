@@ -60,7 +60,7 @@ If you want to acquire new patter with MiRo, you need to compile and execute lis
 - run roscore then, in another terminal, write command source ./devel/setup.bash
 - launch node with "rosrun sensor\_acquisition listener\_Miro \<name of activation sequence you want\>
 
-__Note__ We found that on some system catkin\_make fails because it can't find header file of the compiled platform\_sensors\_msg.msg. If this happen, copy the file platform\_sensors\_msg.h (located in HeaderCatError folder) to devel/include/sensor\_acquisition/ and run catkin\_make again
+__Note:__  We found that on some system catkin\_make fails because it can't find header file of the compiled platform\_sensors\_msg.msg. If this happen, copy the file platform\_sensors\_msg.h (located in HeaderCatError folder) to devel/include/sensor\_acquisition/ and run catkin\_make again
 
 ### Credits 
 Davide Torielli & Fabio Fusaro For the "Software Architectures for Robotics" course 2017/2018
