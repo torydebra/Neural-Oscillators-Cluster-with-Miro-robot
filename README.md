@@ -38,16 +38,15 @@ Sometimes it finds false syncronizations (coupled oscillators that aren't really
 We try taking 5,9 values (and make the average) of each curve for each step (a step is a row in the activation sequence) in different parts of the step and with different method (changeable as input of findSyncronization.m. Also the percentage error to say if sensors are coupled is settable):
 
 1. Five observations on the whole step time (dividing it into equal subTimes)
-   * 11 errors with headBody pattern
+   * 11 errors with headBody pattern (0.09%)
 2. Nine observations on the whole step time (dividing it into equal subTimes)
-   * 10 errors with headBody pattern
+   * 10 errors with headBody pattern (0.08%)
 3. Five observations only on the second half of the step time (to wait for curves to assestate well)
-   * 12 errors with headBody pattern
+   * 12 errors with headBody pattern (0.1%)
 4. Nine observations. We take three maximums for the first activated curve and we observe the curves taking three near values for each maximum..
-   * This is actual the method which gives less errors with the complex pattern headBody\_caress (only 4, as you can see in the heatmap above). This because the points where the curves are more different are near the maximums. However, respect to the other method, it gives errors also for not coupled oscillators that should be coupled.  
+   * This is actual the method which gives less errors with the complex pattern headBody\_caress (only 5 (0.03%), as you can see in the heatmap above). This because the points where the curves are more different are near the maximums. However, respect to the other method, it gives errors also for not coupled oscillators that should be coupled.  
 5. Nine observations in random times of the step
-   * Number of errors is variable, but it is never less than 10
- 
+   * Number of errors is variable, but it is never less than 10 (>0.1%) 
 
 ### Modules/Files in the system
 - listenerMiro.cpp node of the sensor\_acquisition package inside src\/sensor_acquisition\/src (Ros subscriber to store values from MiRo sensors)
