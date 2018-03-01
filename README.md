@@ -6,6 +6,8 @@ When close tactile sensors are excited with	similar	stimuli, the corresponding n
 
 ### Accomplishments
 - Create a simple ROS subscriber that received data from MiRo sensors and save things on a file
+  - The node write on the file timestamp, number òf activated sensors and the cluster group of each sensor.
+    Note that it writes a row only if almost one sensor is activated.
 - Mapped MiRo sensors "flatting" his body. This is needed to understand which sensors are near and so which ones must be syncronized (if they are active). The map is created mesauring distances of MiRo sensors and writing them in the MiroMap.txt file
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/26459008/36801857-7e9bd47a-1cb3-11e8-9eb3-f716f2d8bddf.jpg">
@@ -49,7 +51,7 @@ We try taking 5,9 values (and make the average) of each curve for each step (a s
 
  
 ### How to run the application
-There are already touch patterns taken with listenerMiro.cpp inside matlab/activation\_sequence, and also the txt file with the coordinate of the MiRo's sensors
+There are already touch patterns taken with listenerMiro.cpp inside matlab/activation\_sequence. They are simple caress on body, head, and both (the "complex" one). Also there is the txt file with the coordinate of the MiRo's sensors (given as input to readMap).
 With Matlab, run SlotineExperiment.m (this is the main). If you want you can change here something:
 - To change activation sequence, specify it as argument of ReadInput function
 - As argument of ActivateOscillators you can change ti and tf (the smaller their range is, the more the errors could increase because curves have less time to assestate in each step). You can also change step if you want to take only some rows of the activation sequence chosen
