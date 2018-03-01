@@ -44,7 +44,7 @@ We try taking 5,9 values (and make the average) of each curve for each step (a s
 3. Five observations only on the second half of the step time (to wait for curves to assestate well)
    * 12 errors with headBody pattern (0.1%)
 4. Nine observations. We take three maximums for the first activated curve and we observe the curves taking three near values for each maximum
-   * This is actual the method which gives less errors with the complex pattern headBody\_caress (only 5 (0.03%), as you can see in the heatmap above). This because the points where the curves are more different are near the maximums. However, respect to the other method, it gives errors also for not coupled oscillators that should be coupled.  
+   * This is actual the method which gives less errors with the complex pattern headBody\_caress (only 5 (0.04%), as you can see in the heatmap above). This because the points where the curves are more different are near the maximums. However, respect to the other method, it gives errors also for not coupled oscillators that should be coupled.  
 5. Nine observations in random times of the step
    * Number of errors is variable, but it is never less than 10 (>0.1%) 
 
